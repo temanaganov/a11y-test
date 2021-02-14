@@ -1,0 +1,43 @@
+.tablist {
+	display: flex;
+	margin-bottom: 50px;
+
+	button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 160px;
+		height: 60px;
+		margin-left: 20px;
+		border-radius: 8px;
+		border: none;
+		background-color: transparent;
+		font-size: 22px;
+		line-height: 26px;
+		appearance: none;
+		text-decoration: solid underline;
+		cursor: pointer;
+
+		&:first-child {
+			margin-left: 0;
+		}
+
+		&[tabindex='0'] {
+			background: #c7d2e9;
+			text-decoration: none;
+		}
+	}
+
+	& ~ div {
+		display: none;
+		&.active {
+			display: block;
+		}
+		p {
+			margin-top: 20px;
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+	}
+}

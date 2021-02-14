@@ -1,0 +1,49 @@
+.cards {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 70px 48px;
+
+	.card {
+		display: flex;
+		flex-direction: column;
+
+		.card__image {
+			width: 312px;
+			height: 148px;
+			object-fit: cover;
+			object-position: center;
+		}
+
+		.card__title {
+			margin-top: 24px;
+			font-weight: normal;
+			font-size: 26px;
+			line-height: 30px;
+		}
+
+		.card__subtitle {
+			margin-top: 16px;
+			font-weight: normal;
+			font-size: 22px;
+			line-height: 26px;
+		}
+
+		.card__content {
+			margin-top: 8px;
+			font-size: 16px;
+			line-height: 19px;
+		}
+
+		.card__link {
+			width: fit-content;
+			margin-top: 16px;
+			font-size: 16px;
+			line-height: 19px;
+			color: #bf6ad4;
+			text-decoration: solid underline;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+}
