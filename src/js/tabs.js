@@ -21,16 +21,22 @@ for (const button of tablistButtons) {
 	button.addEventListener('keyup', e => {
 		if (e.key === 'ArrowRight') {
 			const nextEl = e.target.nextElementSibling;
-			if (nextEl.tagName === 'BUTTON') {
+			if (nextEl) {
 				changeTab(e.target, nextEl);
 				nextEl.focus();
+			} else {
+				changeTab(e.target, e.target.parentElement.firstElementChild);
+				e.target.parentElement.firstElementChild.focus();
 			}
 		}
 		if (e.key === 'ArrowLeft') {
 			const prevEl = e.target.previousElementSibling;
-			if (prevEl.tagName === 'BUTTON') {
+			if (prevEl) {
 				changeTab(e.target, prevEl);
 				prevEl.focus();
+			} else {
+				changeTab(e.target, e.target.parentElement.lastElementChild);
+				e.target.parentElement.lastElementChild.focus();
 			}
 		}
 	});
