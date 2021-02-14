@@ -1,0 +1,9 @@
+mixin card(imageUrl, imageAlt, title, subtitle, content, linkUrl, linkText)
+	li.card(tabindex="0", aria-label="Карточка")
+		img(src=imageUrl, alt=imageAlt).card__image
+		h3.card__title= title
+		if subtitle
+			p.card__subtitle= subtitle
+		if content
+			p.card__content= content
+		a(href=linkUrl).card__link= linkText

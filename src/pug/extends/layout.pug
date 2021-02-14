@@ -1,3 +1,5 @@
+include ../includes/mixins
+
 doctype html
 html(lang="ru")
 	head
@@ -5,5 +7,20 @@ html(lang="ru")
 		meta(name="viewport" content="width=device-width, initial-scale=1.0")
 		block head
 	body
-		header
+		a(href="#main").skip-to-main Перейти к основному контенту
+		header.container
+			img(src="images/logo.png", alt="Логотип государственного музея изобразительных искусств имени Александра Сергеевича Пушкина")
+			div
+				input(type="search")
+				a(aria-hidden="true").active RU
+				a(href="/en", hreflang="en", rel="alternate", aria-label="Английская версия сайта") EN
+				button(type="button", aria-label="Войти в личный кабинет")
+					include ../includes/_icon-user
+		nav.container
+			a(href="#events") Выставки и события
+			a(href="#museum") Музей
+			a(href="#live") Онлайн-трансляции
+			a(href="#lectures") Экскурсии и лекции в прямом эфире
 		block body
+		footer
+			.container
