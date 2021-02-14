@@ -5,8 +5,10 @@ const changeTab = (prev, next) => {
 	const prevPanel = document.getElementById(prev.getAttribute('aria-controls'));
 	const nextPanel = document.getElementById(next.getAttribute('aria-controls'));
 	prev.setAttribute('tabindex', '-1');
+	prev.setAttribute('aria-selected', 'false');
 	prevPanel.classList.remove('active');
 	next.setAttribute('tabindex', '0');
+	next.setAttribute('aria-selected', 'true');
 	nextPanel.classList.add('active');
 };
 

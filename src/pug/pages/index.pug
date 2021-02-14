@@ -10,9 +10,9 @@ block body
 		section(aria-labelledby="section-1")#events
 			h2#section-1 Выставки и события
 			.tablist(role="tablist")
-				button(type="button", role="tab", aria-label="События за всё время", aria-controls="events-panel-1", tabindex="0")#events-tab-1 Все
-				button(type="button", role="tab", aria-label="События сегодня", aria-controls="events-panel-2", tabindex="-1")#events-tab-2 Сегодня
-				button(type="button", role="tab", aria-label="События завтра", aria-controls="events-panel-3", tabindex="-1")#events-tab-3 Завтра
+				button(type="button", role="tab", aria-label="События за всё время", aria-selected="true", aria-controls="events-panel-1", tabindex="0")#events-tab-1 Все
+				button(type="button", role="tab", aria-label="События сегодня", aria-selected="false", aria-controls="events-panel-2", tabindex="-1")#events-tab-2 Сегодня
+				button(type="button", role="tab", aria-label="События завтра", aria-selected="false", aria-controls="events-panel-3", tabindex="-1")#events-tab-3 Завтра
 			div(role="tabpanel", aria-labelledby="events-tab-1", tabindex="0")#events-panel-1.active
 				ul.cards
 					+card("images/events-1.png", "", "Святослав Рихтер в кругу друзей. Москва — Коктебель", "Выставка до 20 ноября", "Текст о музее текст Текст о музее текст Текст о музее текст Текст о музее текст", "#", "Купить билет")
@@ -31,8 +31,8 @@ block body
 		section(aria-labelledby="section-2")#museum
 			h2#section-2 Музей
 			.tablist(role="tablist")
-				button(type="button", role="tab", aria-label="События за всё время", aria-controls="museum-panel-1", tabindex="0")#museum-tab-1 Здания
-				button(type="button", role="tab", aria-label="События сегодня", aria-controls="museum-panel-2", tabindex="-1")#museum-tab-2 История
+				button(type="button", role="tab", aria-selected="true", aria-controls="museum-panel-1", tabindex="0")#museum-tab-1 Здания
+				button(type="button", role="tab", aria-selected="false", aria-controls="museum-panel-2", tabindex="-1")#museum-tab-2 История
 			div(role="tabpanel", aria-labelledby="museum-tab-1", tabindex="0")#museum-panel-1.active
 				ul.cards
 					+card("images/museum-1.png", "", "МЕМОРИАЛЬНАЯ КВАРТИРА С.Т. РИХТЕРА", "", "ул. Большая Бронная, 2/6, 16 этаж, кв. 58", "#", "Подробнее")
@@ -41,7 +41,7 @@ block body
 					+card("images/museum-4.png", "", "УЧЕБНЫЙ МУЗЕЙ", "", "ул. Чаянова, 15", "#", "Подробнее")
 					+card("images/museum-5.png", "", "ОТДЕЛ ЛИЧНЫХ КОЛЛЕКЦИЙ", "", "ул. Волхонка, 10", "#", "Подробнее")
 					+card("images/museum-6.png", "", "ГАЛЕРЕЯ", "", "ул. Волхонка, 14", "#", "Подробнее")
-			div(role="tabpanel", aria-labelledby="museum-tab-2", tabindex="0")#museum-panel-2
+			div(role="tabpanel", aria-labelledby="museum-tab-2", tabindex="0")#museum-panel-2.content
 				p Государственный музей изобразительных искусств имени А.С. Пушкина – одно из крупнейших в России художественных собраний зарубежного искусства с древнейших времен до наших дней.
 				p В современной экспозиции представлены обширная учебная коллекция тонированных гипсовых слепков с произведений Античности, Средних веков и эпохи Возрождения, а также собрание подлинных произведений живописи, скульптуры, графики и декоративно-прикладного искусства.
 				p В залах первого этажа Главного здания представлены: произведения искусства Древнего Египта, Античности, собрание европейской живописи VIII–XVIII веков; два зала – Итальянский и Греческий дворики – занимают слепки. На втором этаже Главного здания в залах размещены слепки произведений искусства Древней Греции, Рима, Средних веков и Возрождения.
