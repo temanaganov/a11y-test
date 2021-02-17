@@ -2,4 +2,97 @@ footer {
 	margin-top: 160px;
 	padding: 75px 0 95px;
 	background-color: #f1f1f1;
+
+	.wrapper {
+		display: flex;
+		justify-content: space-between;
+
+		.links {
+			a {
+				display: block;
+				width: fit-content;
+				margin-top: 16px;
+				font-size: 18px;
+				line-height: 21px;
+				text-decoration: solid underline;
+
+				&:first-child {
+					margin-top: 0;
+				}
+
+				&:hover {
+					text-decoration: none;
+				}
+			}
+
+			.social {
+				margin-top: 40px;
+
+				h2 {
+					margin: 0;
+					font-weight: normal;
+					font-size: 24px;
+					line-height: 28px;
+				}
+
+				&__links {
+					display: grid;
+					grid-template-columns: repeat(3, min-content);
+					gap: 25px;
+					margin-top: 15px;
+
+					a {
+						margin: 0;
+					}
+				}
+			}
+		}
+
+		.form {
+			h2 {
+				margin: 0;
+				font-weight: normal;
+				font-size: 24px;
+				line-height: 28px;
+			}
+
+			input[type='email'] {
+				width: 300px;
+				margin-top: 46px;
+				padding: 12px 0;
+				border: none;
+				font-size: 18px;
+				line-height: 21px;
+				background-color: transparent;
+				border-bottom: 1px solid black;
+				appearance: none;
+			}
+
+			button {
+				margin-left: 20px;
+				font-size: 18px;
+				line-height: 21px;
+				padding: 12px 20px;
+				background: #5d16d5;
+				color: white;
+				border-radius: 8px;
+				border: none;
+				cursor: pointer;
+			}
+
+			.checkbox {
+				display: flex;
+				align-items: center;
+				margin-top: 16px;
+
+				input {
+					width: 24px;
+					height: 24px;
+					margin: 0 8px 0 0;
+					border: 1px solid black;
+					cursor: pointer;
+				}
+			}
+		}
+	}
 }

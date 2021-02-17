@@ -3,6 +3,7 @@
 @import 'footer';
 @import 'cards';
 @import 'tabs';
+@import 'modal';
 
 body {
 	background-color: var(--background-color);
@@ -78,7 +79,7 @@ section {
 		width: fit-content;
 		font-size: 22px;
 		line-height: 26px;
-		color: #bf6ad4;
+		color: var(--purple);
 		text-decoration: solid underline;
 		&:hover {
 			text-decoration: none;
