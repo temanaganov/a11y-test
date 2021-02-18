@@ -23,8 +23,14 @@
 		}
 
 		&[tabindex='0'] {
-			background: #c7d2e9;
+			background: var(--light-blue);
 			text-decoration: none;
+		}
+
+		&:hover:not([tabindex='0']) {
+			text-decoration: none;
+			background-color: var(--purple);
+			color: white;
 		}
 	}
 

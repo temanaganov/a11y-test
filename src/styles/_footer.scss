@@ -22,6 +22,7 @@ footer {
 
 				&:hover {
 					text-decoration: none;
+					color: var(--purple);
 				}
 			}
 
@@ -43,6 +44,12 @@ footer {
 
 					a {
 						margin: 0;
+
+						&:hover {
+							path {
+								fill: var(--purple);
+							}
+						}
 					}
 				}
 			}
@@ -73,11 +80,16 @@ footer {
 				font-size: 18px;
 				line-height: 21px;
 				padding: 12px 20px;
-				background: #5d16d5;
-				color: white;
+				background-color: var(--light-blue);
+				color: black;
 				border-radius: 8px;
 				border: none;
 				cursor: pointer;
+
+				&:hover {
+					background-color: var(--purple);
+					color: white;
+				}
 			}
 
 			.checkbox {

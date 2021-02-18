@@ -51,6 +51,7 @@ nav {
 		text-decoration: solid underline;
 		&:hover {
 			text-decoration: none;
+			color: var(--purple);
 		}
 	}
 }
@@ -99,3 +100,32 @@ section {
 	}
 }
 
+.video {
+	position: relative;
+
+	button {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 118px;
+		height: 118px;
+		border-radius: 50%;
+		background-color: white;
+		border: none;
+		appearance: none;
+		cursor: pointer;
+
+		&::before {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 64px;
+			height: 64px;
+			clip-path: polygon(25% 4px, 100% 50%, 25% 60px);
+			background-color: #FF0000;
+			content: '';
+		}
+	}
+}
