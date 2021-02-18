@@ -29,8 +29,8 @@ html(lang="ru")
 					a(href="#") Посетителям с ограниченными возможностями
 					a(href="#") Билеты и льготы
 					a(href="#") Противодействие коррупции
-					section(aria-labelledby="section-social").social
-						h2(aria-label="Ссылки на социальные сети")#section-social Соц. сети
+					section(aria-label="Социальные сети").social
+						h2(aria-label="Социальные сети") Соц. сети
 						.social__links
 							a(href="#", aria-label="Написать по электронной почте")
 								include ../includes/_icon-email
@@ -51,9 +51,9 @@ html(lang="ru")
 				h2#modal-heading Вход
 				form
 					label(for="login", aria-hidden="true").visually-hidden Логин
-					input(type="text", placeholder="Логин")#login
+					input(type="text", placeholder="Логин", required)#login
 					label(for="password", aria-hidden="true").visually-hidden Пароль
-					input(type="password", placeholder="Пароль")#password
+					input(type="password", placeholder="Пароль", required)#password
 					button(type="submit") Вход
 				button(type="button", aria-label="Закрыть окно").modal__close X
 		script(src="js/index.js")
