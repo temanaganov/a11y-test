@@ -12,12 +12,3 @@ const startPlay = () => {
 };
 
 play.addEventListener('click', startPlay);
-
-video.addEventListener('click', () => {
-	if (isPlayed) {
-		video.pause();
-		isPlayed = false;
-	} else {
-		startPlay();
-	}
-});

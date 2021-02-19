@@ -31,8 +31,8 @@ html(lang="ru")
 					a(href="#") Посетителям с ограниченными возможностями
 					a(href="#") Билеты и льготы
 					a(href="#") Противодействие коррупции
-					section(aria-label="Социальные сети").social
-						h2(aria-label="Социальные сети") Соц. сети
+					section(aria-labelledby="section-5").social
+						h2(aria-label="Социальные сети")#section-5 Соц. сети
 						.social__links
 							a(href="#", aria-label="Написать по электронной почте")
 								include ../includes/_icon-email
@@ -40,8 +40,8 @@ html(lang="ru")
 								include ../includes/_icon-telegram
 							a(href="#", aria-label="Facebook")
 								include ../includes/_icon-facebook
-				form(aria-labelledby="section-subscribe").form
-					h2#section-subscribe Подписка на новости
+				form(aria-labelledby="section-6", name="subscribe").form
+					h2#section-6 Подписка на новости
 					label(for="email", aria-hidden="true").visually-hidden Ввести email
 					input(type="email", name="email", placeholder="E-mail" required)#email
 					button(type="submit") Подписаться
@@ -51,7 +51,7 @@ html(lang="ru")
 		.modal(role="dialog", aria-modal="true", aria-labelledby="modal-heading", tabindex="-1")
 			.modal__window
 				h2#modal-heading Вход
-				form
+				form(name="login")
 					label(for="login", aria-hidden="true").visually-hidden Логин
 					input(type="text", placeholder="Логин", required)#login
 					label(for="password", aria-hidden="true").visually-hidden Пароль
