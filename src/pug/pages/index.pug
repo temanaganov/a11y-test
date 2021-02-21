@@ -49,16 +49,15 @@ block body
 				a(href="#") Читать далее
 		section(aria-labelledby="section-3")#live
 			h2#section-3 Онлайн-трансляции
-			.video
-				video(
-					src="images/video.mp4",
-					poster="images/video-poster.jpg",
-					width="100%",
-					height="600",
-					preload="none"
-					aria-label="Видео-лекция «Ай Вейвей: движение к общечеловеческому». Лекцию прочитает заместитель директора государственного музея изобразительных искусств имени Александра Сергеевича Пушкина по региональному развитию Екатерина Кочеткова."
-				)
-				button(aria-label="Воспроизвести видео")
+			iframe(
+				width="560"
+				height="315"
+				src="https://www.youtube.com/embed/5qRR-5H1XgU"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen
+				aria-label="Видео Ай Вейвей: движение к общечеловеческому"
+			).video
 		section(aria-labelledby="section-4")#lectures
 			h2#section-4 Экскурсии и лекции в прямом эфире
 			p С 1 июля вы можете присоединиться к нашим виртуальным мероприятиям — экскурсиям и лекциям для взрослых и детей, оплатив участие на сайте. Встречи будут проходить в прямом эфире на платформе Zoom; предусмотрен формат живого общения с возможностью задавать вопросы экскурсоводу (лектору).
