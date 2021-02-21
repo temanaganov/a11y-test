@@ -12,7 +12,7 @@ html(lang="ru")
 			img(src="images/logo.png", alt="Логотип государственного музея изобразительных искусств имени Александра Сергеевича Пушкина")
 			div
 				form(name="search")
-					label(for="search", aria-hidden="true").visually-hidden Искать на странице
+					label(for="search").visually-hidden Искать на странице
 					input(type="search", placeholder="Искать на странице", name="text")#search
 					include ../includes/_icon-zoom
 				a(aria-hidden="true").active RU
@@ -42,19 +42,19 @@ html(lang="ru")
 								include ../includes/_icon-facebook
 				form(aria-labelledby="section-6", name="subscribe").form
 					h2#section-6 Подписка на новости
-					label(for="email", aria-hidden="true").visually-hidden Ввести email
+					label(for="email").visually-hidden Ввести email
 					input(type="email", name="email", placeholder="E-mail" required)#email
 					button(type="submit") Подписаться
 					.checkbox
 						input(type="checkbox", name="agreement", required)#agreement
-						label(for="agreement", aria-hidden="true") Согласен на обработку персональных данных
+						label(for="agreement") Согласен на обработку персональных данных
 		.modal(role="dialog", aria-modal="true", aria-labelledby="modal-heading", tabindex="-1")
 			.modal__window
 				h2#modal-heading Вход
 				form(name="login")
-					label(for="login", aria-hidden="true").visually-hidden Логин
+					label(for="login").visually-hidden Логин
 					input(type="text", placeholder="Логин", required)#login
-					label(for="password", aria-hidden="true").visually-hidden Пароль
+					label(for="password").visually-hidden Пароль
 					input(type="password", placeholder="Пароль", required)#password
 					button(type="submit") Вход
 				button(type="button", aria-label="Закрыть окно").modal__close X
