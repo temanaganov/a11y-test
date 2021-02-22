@@ -11,12 +11,11 @@ html(lang="ru")
 		header.container
 			img(src="images/logo.png", alt="Логотип государственного музея изобразительных искусств имени Александра Сергеевича Пушкина")
 			div
-				form(name="search")
-					label(for="search").visually-hidden Искать на странице
+				form(name="search", role="search")
 					input(type="search", placeholder="Искать на странице", name="text")#search
 					include ../includes/_icon-zoom
 				a(aria-hidden="true").active RU
-				a(href="/en", hreflang="en", rel="alternate", aria-label="Английская версия сайта") EN
+				a(href="#", hreflang="en", rel="alternate", aria-label="Английская версия сайта") EN
 				button(type="button", aria-label="Войти в личный кабинет", aria-haspopup="dialog").js-open-modal
 					include ../includes/_icon-user
 		nav.container
